@@ -39,16 +39,4 @@ public class Asteroid : MonoBehaviour
         Destroy(gameObject);
         Debug.Log("Asteroid destroyed");
     }
-    
-    // When the asteroid collides with another asteroid, destroy it
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        // Debug tag
-        Debug.Log("Collision detected with " + other.gameObject.tag);
-        if (other.gameObject.CompareTag("Asteroid(Clone)"))
-        {
-            Destroy(gameObject);
-            Debug.Log("Asteroid destroyed MQLSKDMQSLKD MQLSKDMLQSK DMOQSKDMLQSKJD QKDSLQKSJD LQKSDJ");
-        }
-    }
 }
