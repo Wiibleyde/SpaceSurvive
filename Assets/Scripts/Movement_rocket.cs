@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Movement_rocket : MonoBehaviour
 {
+    
+    public float speed = 0;
 
 
     // Update is called once per frame
@@ -18,7 +20,7 @@ public class Movement_rocket : MonoBehaviour
         movement.Normalize();
         
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.MovePosition(rb.position + movement * 10 * Time.deltaTime);
+        rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
         
     }
 }
