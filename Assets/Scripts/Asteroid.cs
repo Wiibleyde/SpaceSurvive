@@ -43,6 +43,8 @@ public class Asteroid : MonoBehaviour
     // When the asteroid collides with another asteroid, destroy it
     void OnCollisionEnter2D(Collision2D other)
     {
+        // Debug tag
+        Debug.Log("Collision detected with " + other.gameObject.tag);
         if (other.gameObject.CompareTag("Asteroid(Clone)"))
         {
             Destroy(gameObject);
