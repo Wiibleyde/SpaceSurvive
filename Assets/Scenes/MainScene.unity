@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 312417718}
   - component: {fileID: 312417717}
   m_Layer: 0
-  m_Name: space (1)
+  m_Name: SpaceBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 2025563107}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -939,6 +939,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4801629884405290390, guid: 05598e24cb2a2e793b056935c46809dc, type: 3}
       propertyPath: m_Name
+      value: Asteroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801629884405290390, guid: 05598e24cb2a2e793b056935c46809dc, type: 3}
+      propertyPath: m_TagString
       value: Asteroid
       objectReference: {fileID: 0}
     - target: {fileID: 7549298102051534152, guid: 05598e24cb2a2e793b056935c46809dc, type: 3}

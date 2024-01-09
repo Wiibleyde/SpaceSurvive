@@ -37,6 +37,5 @@ public class Asteroid : MonoBehaviour
     void OnBecameInvisible()
     {
         Destroy(gameObject);
-        Debug.Log("Asteroid destroyed");
     }
 }

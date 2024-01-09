@@ -12,10 +12,8 @@ public class SpawnPrefab : MonoBehaviour
         // Spawn a prefab every 0.75 seconds
         if (Time.frameCount % 60 == 0)
         {
-            Debug.Log("Spawn a prefab");
-            // Instantiate the prefab
-            GameObject asteroid = Instantiate(asteroidPrefab);
-            
+            // Instantiate the prefab with the tag "Asteroid"
+            GameObject asteroid = Instantiate(asteroidPrefab, transform.position, Quaternion.identity);
         }
     }
 }

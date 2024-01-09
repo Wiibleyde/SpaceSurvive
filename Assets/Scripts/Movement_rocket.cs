@@ -33,4 +33,14 @@ public class Movement_rocket : MonoBehaviour
 		// Inertia (Continue the move but slow fast)
 	    rb.velocity = movement * speed;
     }
+
+	// When the rocket hit an untagged object, the game is over
+    void OnCollisionEnter2D(Collision2D collision)
+    {	
+        if (collision.gameObject.tag != "Wall")
+        {
+            Debug.Log("Game Over");
+			UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        }
+    }
 }
