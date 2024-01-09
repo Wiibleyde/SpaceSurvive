@@ -18,9 +18,19 @@ public class Movement_rocket : MonoBehaviour
         Vector2 movement = new Vector2(moveX, moveY);
         
         movement.Normalize();
-        
+
+		// Rotation of the rocket
+		if (movement.x != 0 || movement.y != 0)
+        {
+         	float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
+			transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);  
+        }
+
+	    // Movement of the rocket        
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
         
+		// Inertia (Continue the move but slow fast)
+	    rb.velocity = movement * speed;
     }
 }
