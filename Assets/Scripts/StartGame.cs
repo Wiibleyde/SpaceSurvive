@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    public void Start()
+    public void StartGameButton()
     {
         Debug.Log("Start Game");
         SceneManager.LoadScene(0);
     }
 
-    public void Quit()
+    public void QuitGameButton()
     {
         Debug.Log("Quit Game");
         Application.Quit();
