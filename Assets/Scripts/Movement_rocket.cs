@@ -40,7 +40,7 @@ public class Movement_rocket : MonoBehaviour
         if (collision.gameObject.tag != "Wall")
         {
             Debug.Log("Game Over");
-			UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+			UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
     }
 }

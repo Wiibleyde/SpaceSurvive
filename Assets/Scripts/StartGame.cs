@@ -8,8 +8,7 @@ public class StartGame : MonoBehaviour
 {
     public void StartGameButton()
     {
-        Debug.Log("Start Game");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGameButton()
